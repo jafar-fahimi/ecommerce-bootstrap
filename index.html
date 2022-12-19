@@ -7,8 +7,6 @@
     <link rel="stylesheet" href="./bootstrap-5.2/bootstrap.min.css">
     <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css" />
-    <script src="./scripts/jquery-3.6.1.min.js" defer></script>
-    <script src="./scripts/isotope.pkgd.min.js" defer></script>
     <title>Ecommerce Project Utube Made</title>
   </head>
   <body>
@@ -87,14 +85,14 @@
           <h2 class="position-relative d-inline-block"> New Collection</h2>
         </div>
         <div class="row g-0">
-          <div class="d-flex flex-wrap justify-content-center mt-5">
-            <button class="m-2 text-dark btn active-filter-btn" type="button">All</button>
-            <button class="m-2 text-dark btn" type="button">Best Sellers</button>
-            <button class="m-2 text-dark btn" type="button">Features</button>
-            <button class="m-2 text-dark btn" type="button">New Arrival</button>
+          <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
+            <button class="m-2 text-dark btn active-filter-btn" type="button" data-filter="*">All</button>
+            <button class="m-2 text-dark btn" type="button" data-filter=".best">Best Sellers</button>
+            <button class="m-2 text-dark btn" type="button" data-filter=".ordinary">Features</button>
+            <button class="m-2 text-dark btn" type="button" data-filter=".new">New Arrival</button>
           </div>
           <div class="collection-list mt-4 row gx-0 gy-3">
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(3).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -111,8 +109,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 ordinary">
                 <div class="collection-img position-relative">
                   <img src="./images/bag.png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -129,7 +126,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(1).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -146,7 +143,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(2).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -163,7 +160,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(4).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -180,7 +177,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(3).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -197,7 +194,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 ordinary">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(3).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -214,7 +211,7 @@
                   <span class="fw-bold">$ 45.00</span>
                 </div>
             </div>
-            <div class="col-md-6 col-xl-4 col-xl-3 p-2">
+            <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
                 <div class="collection-img position-relative">
                   <img src="./images/bag(3).png" class="w-100" alt="">
                   <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
@@ -237,6 +234,8 @@
       </div>
     </section>
     <script src="./bootstrap-5.2/bootstrap.min.js"></script>
+    <script src="./scripts/jquery-3.6.1.min.js"></script>
+    <script src="./scripts/isotope.pkgd.min.js"></script>
     <script src="./scripts/script.js"></script>
   </body>
 </html>
