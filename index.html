@@ -4,22 +4,24 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./bootstrap-5.2/bootstrap.min.css">
-    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./bootstrap-5.2/bootstrap.min.css" />
+    <link rel="stylesheet" href="./fontawesome-free-6.2.0-web/css/all.min.css" />
     <link rel="stylesheet" href="./styles/style.css" />
     <title>Ecommerce Project Utube Made</title>
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light py-3 fixed-top">
+    <nav class="navbar navbar-expand-lg bg-light py-3 fixed-top">
       <div class="container">
-        <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center order-lg-0">
-          <img src="./images/svg/logo.95d47bbac8db6c1e8f997bbf26ca05cf.svg" alt="logo">
+        <a href="index.html" class="navbar-brand d-flex justify-content-between align-items-center">
+          <img src="./images/svg/logo.95d47bbac8db6c1e8f997bbf26ca05cf.svg" alt="logo" />
           <span class="text-uppercase fw-lighter ms-2">Logo</span>
         </a>
+
         <div class="order-lg-2 nav-btns">
           <button type="button" class="btn position-relative">
             <i class="fa fa-heart"></i>
-            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">2</span>
+            <!-- translate-middle act as transform:translate(-50%, -50%); -->
+            <span class="position-absolute translate-middle top-0 start-100 badge bg-primary">2</span>
           </button>
           <button type="button" class="btn position-relative">
             <i class="fa fa-shopping-cart"></i>
@@ -29,10 +31,17 @@
             <i class="fa fa-search"></i>
           </button>
         </div>
-        <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+
+        <!-- border-0 - border-5 is d line around button content -->
+        <!-- navbar-toggler is shown when our page get smaller than lg -->
+        <button
+          class="navbar-toggler border-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navMenu"
+        >
           <span class="navbar-toggler-icon"></span>
         </button>
-
         <div class="collapse navbar-collapse order-lg-1" id="navMenu">
           <ul class="navbar-nav mx-auto text-center">
             <li class="nav-item p-2">
@@ -50,7 +59,7 @@
             <li class="nav-item p-2">
               <a href="#about" class="nav-link text-uppercase text-dark">About us</a>
             </li>
-            <li class="nav-item p-2 border-0">
+            <li class="nav-item p-2">
               <a href="#popular" class="nav-link text-uppercase text-dark">Popular</a>
             </li>
           </ul>
@@ -58,7 +67,7 @@
       </div>
     </nav>
 
-    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top:105px;">
+    <header id="header" class="vh-100 carousel slide" data-bs-ride="carousel" style="padding-top: 105px">
       <div class="container h-100 d-flex align-items-center carousel-inner">
         <div class="text-center carousel-item active">
           <h2 class="text-capitalize text-white">Best Collection</h2>
@@ -82,9 +91,10 @@
     <section id="collection" class="py-5">
       <div class="container">
         <div class="title text-center">
-          <h2 class="position-relative d-inline-block"> New Collection</h2>
+          <h2 class="position-relative d-inline-block">New Collection</h2>
         </div>
-        <div class="row g-0">
+        <!-- <div class="row g-0"> -->
+        <div>
           <div class="d-flex flex-wrap justify-content-center mt-5 filter-button-group">
             <button class="m-2 text-dark btn active-filter-btn" type="button" data-filter="*">All</button>
             <button class="m-2 text-dark btn" type="button" data-filter=".best">Best Sellers</button>
@@ -93,142 +103,165 @@
           </div>
           <div class="collection-list mt-4 row gx-0 gy-3">
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(3).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(3).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 ordinary">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag.png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag.png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(1).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(1).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(2).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(2).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(4).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(4).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 best">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(3).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(3).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 ordinary">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(3).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(3).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
             <div class="col-md-6 col-lg-4 col-xl-3 p-2 new">
-                <div class="collection-img position-relative">
-                  <img src="./images/bag(3).png" class="w-100" alt="">
-                  <span class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center">Sale</span>
+              <div class="collection-img position-relative">
+                <img src="./images/bag(3).png" class="w-100" alt="" />
+                <span
+                  class="position-absolute bg-primary text-white d-flex justify-content-center align-items-center"
+                  >Sale</span
+                >
+              </div>
+              <div class="text-center">
+                <div class="rating mt-3">
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
+                  <span class="text-pink"><i class="fa fa-star"></i></span>
                 </div>
-                <div class="text-center">
-                  <div class="rating mt-3">
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa fa-star"></i></span>
-                    <span class="text-pink"><i class="fa  fa-star"></i></span>
-                  </div>
-                  <p class="text-capitalize my-1">Gray Shirt</p>
-                  <span class="fw-bold">$ 45.00</span>
-                </div>
+                <p class="text-capitalize my-1">Gray Shirt</p>
+                <span class="fw-bold">$ 45.00</span>
+              </div>
             </div>
-
           </div>
         </div>
       </div>
