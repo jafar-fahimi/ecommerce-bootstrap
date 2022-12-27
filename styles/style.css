@@ -97,19 +97,37 @@ body {
   top: 50%;
   transform: translateY(-50%);
 }
+/* collection */
 .active-filter-btn {
   background-color: var(--pink) !important;
   color: #fff !important;
   border: var(--pink) !important;
 }
-.collection-list span {
+.filter-button-group .btn:hover {
+  color: #fff !important;
+}
+
+.collection-img span {
   top: 20px;
   right: 20px;
   width: 46px;
   height: 46px;
   border-radius: 50%;
 }
-
+/* special */
+.special-img span {
+  top: 20px;
+  right: 20px;
+}
+.special-list .btn {
+  padding: 8px 20px !important;
+}
+.special-img img {
+  transition: all 0.3s ease;
+}
+.special-img:hover img {
+  transform: scale(1.2);
+}
 @media (max-width: 992px) {
   .nav-item {
     border-bottom: none;
