@@ -133,3 +133,14 @@ body {
     border-bottom: none;
   }
 }
+/* offers */
+#offers {
+  background: url("../images/rio-dark.jpg") center/cover no-repeat;
+}
+#offers .row {
+  min-height: 60vh; /* to increase height */
+}
+
+.offers-content h2 {
+  font-family: "Times New Roman", Times, serif !important;
+}
