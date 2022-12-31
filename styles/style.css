@@ -171,7 +171,20 @@ body {
   border: var(--pink);
 }
 
-#newsletter .btn:hover{
+#newsletter .btn:hover {
   background-color: #000;
-  border:#000;
+  border: #000;
+}
+/* footer */
+footer .brand,
+footer li {
+  font-family: var(--lg-font);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  letter-spacing: 2px;
+}
+footer a {
+  transition: color 0.3s ease;
+}
+footer a:hover {
+  color: var(--pink) !important;
 }
