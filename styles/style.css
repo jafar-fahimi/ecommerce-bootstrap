@@ -40,10 +40,11 @@ body {
 /* End of Styling of friendship  */
 
 :root {
-  --pink: #e5345b;
+  --pink: #ef851b;
+  /* --pink: #e5345b; */
 }
 .text-pink {
-  color: #e5345b !important;
+  color: #ef851b !important;
 }
 .bg-primary {
   background-color: var(--pink) !important;
@@ -138,7 +139,7 @@ body {
 }
 /* offers */
 #offers {
-  background: url("../images/rio-dark.jpg") center/cover no-repeat;
+  background: url("../images/rio-light.jpg") center/cover no-repeat;
 }
 #offers .row {
   min-height: 60vh; /* to increase height */
