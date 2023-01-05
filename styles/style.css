@@ -40,14 +40,14 @@ body {
 /* End of Styling of friendship  */
 
 :root {
-  --pink: #ef851b;
-  /* --pink: #e5345b; */
+  --primary: #ef851b;
+  /* --primary: #e5345b; */
 }
-.text-pink {
+.text-primary {
   color: #ef851b !important;
 }
 .bg-primary {
-  background-color: var(--pink) !important;
+  background-color: var(--primary) !important;
 }
 .btn:not(.nav-btns button) {
   /* all btn except btns in .nav-btns */
@@ -58,9 +58,9 @@ body {
   border: 1px solid rgb(85, 85, 85);
 }
 .btn:not(.nav-btns button):hover {
-  background-color: var(--pink);
+  background-color: var(--primary);
   color: #fff;
-  border: var(--pink);
+  border: var(--primary);
 }
 .navbar {
   box-shadow: 0 3px 9px 3px rgba(0, 0, 0, 0.2);
@@ -72,7 +72,7 @@ body {
   letter-spacing: 2px;
 }
 .nav-link:hover {
-  background-color: var(--pink);
+  background-color: var(--primary);
 }
 .nav-item {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -88,7 +88,7 @@ body {
   border-color: #fff !important;
 }
 .carousel-item .btn:hover {
-  border-color: var(--pink) !important;
+  border-color: var(--primary) !important;
 }
 .title h2::before {
   /* h2 must be d-inline-block, so that ::before will attach it! */
@@ -96,16 +96,16 @@ body {
   content: ""; /* without content, our background-color isn't visible */
   width: 4px;
   height: 50px;
-  background-color: var(--pink);
+  background-color: var(--primary);
   left: -20px; /* to come back(left) from its position */
   top: 50%;
   transform: translateY(-50%);
 }
 /* collection */
 .active-filter-btn {
-  background-color: var(--pink) !important;
+  background-color: var(--primary) !important;
   color: #fff !important;
-  border: var(--pink) !important;
+  border: var(--primary) !important;
 }
 .filter-button-group .btn:hover {
   color: #fff !important;
@@ -167,9 +167,9 @@ body {
   border-bottom-left-radius: 25px;
 }
 #newsletter .btn {
-  background-color: var(--pink);
+  background-color: var(--primary);
   color: #fff;
-  border: var(--pink);
+  border: var(--primary);
 }
 
 #newsletter .btn:hover {
@@ -187,7 +187,7 @@ footer a {
   transition: color 0.3s ease;
 }
 footer a:hover {
-  color: var(--pink) !important;
+  color: var(--primary) !important;
 }
 @media (max-width: 502px) {
   #logo-text {
