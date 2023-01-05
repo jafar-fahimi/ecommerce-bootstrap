@@ -188,3 +188,8 @@ footer a {
 footer a:hover {
   color: var(--pink) !important;
 }
+@media (max-width: 502px) {
+  #logo-text {
+    display: none;
+  }
+}
