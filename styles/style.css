@@ -191,6 +191,6 @@ footer a:hover {
 }
 @media (max-width: 502px) {
   #logo-text {
-    display: none;
+    /* display: none; */
   }
 }
