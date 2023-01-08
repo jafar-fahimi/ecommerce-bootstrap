@@ -7,37 +7,6 @@
 .logo-img {
   width: 60px !important;
 }
-/* h1 {
-    font-size: 50px;
-    line-height: 64px;
-    color: #222;
-}
-h2 {
-    font-size: 46px;
-    line-height: 54px;
-    color: #222;
-}
-h3 {
-    font-size: 20px;
-    line-height: 54px;
-    color: #222;
-}
-h6 {
-    font-weight: 700;
-    font-size: 12px;
-}
-p {
-    font-size: 16px;
-    color: #465b52;
-    margin: 15px 0 20px 0;
-}
-.section-p1 {
-    padding: 40px 80px;
-}
-body {
-    width: 100%;
-} */
-/* End of Styling of friendship  */
 
 :root {
   --primary: #ef851b;
@@ -73,6 +42,7 @@ body {
 }
 .nav-link:hover {
   background-color: var(--primary);
+  border-radius: 7px;
 }
 .nav-item {
   border-bottom: 0.5px solid rgba(0, 0, 0, 0.1);
@@ -90,6 +60,7 @@ body {
 .carousel-item .btn:hover {
   border-color: var(--primary) !important;
 }
+/* to set left border for <h2>New Collection </h2> */
 .title h2::before {
   /* h2 must be d-inline-block, so that ::before will attach it! */
   position: absolute;
@@ -188,6 +159,10 @@ footer a {
 }
 footer a:hover {
   color: var(--primary) !important;
+}
+footer .footer-logo-link:hover {
+  display: inline-block; /* inline elem don't accept transform */
+  transform: scale(1.5);
 }
 @media (max-width: 502px) {
   #logo-text {
