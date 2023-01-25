@@ -169,3 +169,90 @@ footer .footer-logo-link:hover {
     /* display: none; */
   }
 }
+
+/* down is motto's style */
+/* center the blockquote in the page */
+.blockquote-wrapper {
+  display: flex;
+  /* height: 100vh; */
+  padding: 0 20px;
+}
+
+/* Blockquote main style */
+.blockquote {
+  position: relative;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+  /* color: var(--primary); */
+  padding: 30px 0;
+  width: 100%;
+  max-width: 500px;
+  z-index: 1;
+  margin: 2px auto;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}
+
+/* Blockquote header */
+#motto {
+  padding-top: 0;
+}
+.blockquote h1 {
+  text-transform: none;
+  position: relative;
+  color: var(--primary);
+  font-size: 40px;
+  font-weight: 800;
+  line-height: 1;
+  margin: 0;
+}
+
+/* Blockquote right double quotes */
+.blockquote:after {
+  position: absolute;
+  content: "”";
+  color: var(--primary);
+  font-size: 10rem;
+  line-height: 0;
+  bottom: -43px;
+  right: 30px;
+}
+
+/* increase header size after 600px */
+@media all and (min-width: 600px) {
+  .blockquote h1 {
+    font-size: 60px;
+  }
+}
+
+/* Blockquote subheader */
+.blockquote h2 {
+  text-transform: none;
+  position: relative;
+  /* color: var(--primary); */
+  font-size: 1.4rem;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0;
+  padding-top: 20px;
+  z-index: 1;
+}
+
+#motto {
+  -webkit-animation-name: motto-show;
+  -webkit-animation-duration: 2s;
+  animation: motto-show 3s linear;
+}
+@keyframes motto-show {
+  from {
+    visibility: hidden;
+    opacity: 0%;
+    transform: translateX(100%);
+  }
+  to {
+    visibility: visible;
+    opacity: 100%;
+    transform: translateX(0);
+  }
+}
